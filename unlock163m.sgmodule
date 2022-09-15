@@ -1,5 +1,5 @@
 #!name=163unlock
-#!desc=滴答解锁模块模块
+#!desc=网易云音乐解锁vip模块
 [Script]
 163music=type=http-response,pattern=^http?:\/\/.*\.music\.163\.com\/\w{4}\/(song|v\d|playlist|search|artist),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/45da6349bd85f037faaafeb3f23eaec9/raw/Netease.vip.conf,script-update-interval=0
 
