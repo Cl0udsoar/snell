@@ -1,7 +1,7 @@
 #!name=kelaunlock
 #!desc=克拉壁纸解锁模块
 [Script]
-clarityUnlock=type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll|user\/update),requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/main/clarity.js,script-update-interval=0
+clarityUnlock=type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll),requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/main/clarity.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% claritywallpaper.com
