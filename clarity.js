@@ -13,7 +13,7 @@ var obj = JSON.parse(body);
 
 const userinfo = '/userInfo';
 
-const setfree = '/special/queryByCatalogAll';
+const setfree = '/special/';
 
 if (url.indexOf(setfree) != -1) {
    for (var i = 0; i < obj.data.length; i++) {
