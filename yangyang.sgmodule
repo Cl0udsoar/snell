@@ -1,6 +1,6 @@
 #!name=yychange
 #!desc=羊羊替换关卡
-[URL Rewrite]
-^(https://cat-match.easygame2021.com/sheep/v1/game/map_info_new\?map_id=).*(?<!80001)$ https://cat-match.easygame2021.com/sheep/v1/game/map_info_new?map_id=80001 header
+[Script]
+yangyangchange=type=http-response,pattern=^https://cat-match.easygame2021.com/sheep/v1/game/map_info_ex,requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/main/yangyang.js,script-update-interval=0
 [MITM]
 hostname = %APPEND% cat-match.easygame2021.com
