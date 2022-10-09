@@ -1,0 +1,4 @@
+#!name=fdds
+#!desc=功能解锁
+[Script]
+fddsunlock = type=http-response,pattern=https://api.dushu.io/Album/Info,requires-body=1,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/main/js/fd.js,script-update-interval=0,max-size=0
