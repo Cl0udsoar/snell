@@ -1,0 +1,9 @@
+#!name=ppxnoad
+#!desc=ppx去广告
+[Script]
+ppxnoad=type=http-request,pattern=^https?:\/\/.*\.pipix\.com\/bds\/(feed\/stream|comment\/cell_reply|cell\/cell_comment|cell\/detail|ward\/list|user\/favorite|user\/cell_coment|user\/cell_userfeed|user\/publish_list),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/main/ppx.js,script-update-interval=0
+# ======= 去水印 ======= #
+# ======= 去广告 ======= #
+app_name=super&([\S]*)aid=\d+ url 307 app_name=super_pro&$1aid=1412
+[MITM]
+hostname = *.pipix.com
