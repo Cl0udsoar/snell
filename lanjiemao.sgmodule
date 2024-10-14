@@ -1,0 +1,7 @@
+#!name=lanjiemao
+#!desc=拦截猫+解锁订阅
+[Script]
+lanjiemaoVipCrack = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/WasteCat.js
+
+[MITM]
+hostname = buy.itunes.apple.com
