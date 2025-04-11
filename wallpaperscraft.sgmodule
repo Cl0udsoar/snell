@@ -2,8 +2,8 @@
 #!desc=wallpaperscraft解锁vip模块
 
 [Script]
-Wallcraft=type=http-response,pattern=^https:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads,requires-body=1,max-size=0, script-content=https://raw.githubusercontent.com/Cl0udsoar/snell/refs/heads/main/js/wallpaperscraft.js,script-update-interval=0
+Wallcraft=type=http-response,pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cl0udsoar/snell/refs/heads/main/js/wallpaperscraft.js,script-update-interval=0
 
 
 [MITM]
-hostname = billing-ios.wallpaperscraft.com
+hostname = %APPEND% billing-ios.wallpaperscraft.com
