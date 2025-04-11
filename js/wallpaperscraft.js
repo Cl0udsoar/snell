@@ -1,23 +1,17 @@
-// unlock-wallpaperscraft.js
+// Wallcraft Pro Unlock for Surge
 
-let body = $response.body;
-let obj = JSON.parse(body);
+let obj = JSON.parse($response.body);
 
-// 打印原始数据（可选）
-$console.log("原始数据:");
-$console.log(JSON.stringify(obj, null, 2));
-
-if (obj?.items) {
-  for (let key in obj.items) {
+// 遍历所有 items 项，强制设置 is_active = true
+for (let key in obj.items) {
+  if (obj.items.hasOwnProperty(key)) {
     obj.items[key].is_active = true;
+
+    // 如果存在 introductory_price 标志，也设置为已使用
     if (obj.items[key].hasOwnProperty("already_used_introductory_price")) {
       obj.items[key].already_used_introductory_price = true;
     }
   }
 }
-
-// 打印修改后的数据
-$console.log("修改后的数据:");
-$console.log(JSON.stringify(obj, null, 2));
 
 $done({ body: JSON.stringify(obj) });
