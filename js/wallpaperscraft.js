@@ -13,5 +13,5 @@ for (let key in obj.items) {
     }
   }
 }
-
+console.log(JSON.stringify(obj));
 $done({ body: JSON.stringify(obj) });
