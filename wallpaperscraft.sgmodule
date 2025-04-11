@@ -2,16 +2,8 @@
 #!desc=wallpaperscraft解锁vip模块
 
 [Script]
-Wallcraft Pro Unlock = type=http-response, pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$, requires-body=1, max-size=0, script-content=
-    var response = JSON.parse($response.body);
-    if (response && response.subscriptions) {
-        for (var key in response.subscriptions) {
-            if (response.subscriptions.hasOwnProperty(key)) {
-                response.subscriptions[key].is_active = true;
-            }
-        }
-    }
-    $done({body: JSON.stringify(response)});
+Wallcraft Pro Unlock = type=http-response, pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$, requires-body=1, max-size=0, script-content=https://raw.githubusercontent.com/Cl0udsoar/snell/refs/heads/main/js/wallpaperscraft.js
+
 
 [MITM]
 hostname = billing-ios.wallpaperscraft.com
