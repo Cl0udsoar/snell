@@ -1,0 +1,7 @@
+#!name=ps拦截系统更新及游戏更新
+#!desc=ps拦截系统更新及游戏更新
+[Rule]
+# 拦截 PlayStation 下载
+DOMAIN-KEYWORD,dl.playstation,REJECT,pre-matching
+# 拦截 PlayStation 更新
+DOMAIN-KEYWORD,update.playstation,REJECT,pre-matching
