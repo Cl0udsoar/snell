@@ -5,4 +5,4 @@
 DOMAIN-KEYWORD,dl.playstation,REJECT,pre-matching
 # 拦截 PlayStation 更新
 DOMAIN-KEYWORD,update.playstation,REJECT,pre-matching
-DOMAIN-KEYWORD,playstation,REJECT,pre-matching
+#DOMAIN-KEYWORD,playstation,REJECT,pre-matching
