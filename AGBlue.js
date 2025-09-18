@@ -5,7 +5,7 @@ try {
   body = {};
 }
 // 把 message 和 status_code 改成成功的值（只改 body）
-body.message = "";
-body.status_code = 200;
+body.message = "1";
+body.status_code = 0;
 
 $done({body: JSON.stringify(body)});
