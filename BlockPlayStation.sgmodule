@@ -6,3 +6,6 @@ DOMAIN-KEYWORD,dl.playstation,REJECT,pre-matching
 # 拦截 PlayStation 更新
 DOMAIN-KEYWORD,update.playstation,REJECT,pre-matching
 #DOMAIN-KEYWORD,playstation,REJECT,pre-matching
+
+AND,SRC-IP,192.168.1.89,DOMAIN-SUFFIX,youtube.com,REJECT,pre-matching
+AND,SRC-IP,192.168.1.89,DOMAIN-SUFFIX,youtubei.googleapis.com,REJECT,pre-matching
