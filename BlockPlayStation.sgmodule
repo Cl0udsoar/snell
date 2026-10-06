@@ -9,3 +9,5 @@ DOMAIN-KEYWORD,update.playstation,REJECT,pre-matching
 
 AND,SRC-IP,192.168.1.89,DOMAIN-SUFFIX,youtube.com,REJECT,pre-matching
 AND,SRC-IP,192.168.1.89,DOMAIN-SUFFIX,youtubei.googleapis.com,REJECT,pre-matching
+AND,SRC-IP,192.168.1.89,DOMAIN-SUFFIX,googlevideo.com,REJECT,pre-matching
+AND,SRC-IP,192.168.1.89,DOMAIN,youtube-ui.l.google.com,REJECT,pre-matching
